@@ -1,0 +1,18 @@
+/* /src/components/PaginaPrincipala.css */
+
+.pagina-principala {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.pagina-principala h1 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.pagina-principala h2 {
+  font-size: 1.5em;
+  color: #555;
+}
