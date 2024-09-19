@@ -1,83 +1,160 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 body {
-  margin: 0;
   font-family: Arial, sans-serif;
-}
-
-.header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100px;
-  background-color: rgba(128, 128, 128, 0.5); 
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1000; 
-  animation: fadeInOut 5s infinite;
-}
-
-@keyframes fadeInOut {
-  0% {
-    opacity: 0.5;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0.5;
-  }
-}
-
-main {
-  margin-top: 140px;
+  background-color: #f5f5f5;
+  margin: 0;
   padding: 20px;
 }
-.plin {
-width:100%;margin:0 auto;text-align:center;display:block
+
+h1 {
+  text-align: center;
+  color: #333;
 }
+
 table {
   width: 100%;
   border-collapse: collapse;
   margin: 20px 0;
-  font-family: Arial, sans-serif;
-}
-
-th, td {
-  border: 1px solid #ddd;
-  padding: 12px;
+  font-size: 18px;
   text-align: left;
 }
 
-thead th {
-  background-color: #f4f4f4; 
-  color: #333;
-  font-weight: bold;
+table thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
 }
 
-tbody tr:nth-child(even) {
+table th,
+table td {
+  padding: 12px 15px;
+}
+
+table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+.detalii-chirias {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
   background-color: #f9f9f9;
 }
 
-tbody tr:nth-child(odd) {
-  background-color: #fff;
+.detalii-chirias h3 {
+  margin-top: 0;
 }
 
-tbody tr:hover {
-  background-color: #f1f1f1; 
+
+.login-page,
+.admin-page {
+  margin: 20px;
 }
 
-th {
-  border-bottom: 2px solid #ddd; 
+.login-page form,
+.admin-page form {
+  display: flex;
+  flex-direction: column;
 }
 
-td {
-  border-bottom: 1px solid #ddd; 
+.login-page label,
+.admin-page label {
+  margin-bottom: 10px;
+}
+
+.login-page button,
+.admin-page button {
+  margin-top: 10px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  padding: 20px;
+}
+
+.login-page {
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 50px;
+}
+
+.login-page h2 {
+  color: #333;
+}
+
+.login-page form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-page label {
+  margin-bottom: 10px;
+}
+
+.login-page input[type="password"] {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.login-page button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.login-page button:hover {
+  background-color: #0056b3;
+}
+
+.admin-page {
+  background-color: #e0f7fa;
+  padding: 50px;
+  text-align: center;
+}
+
+.admin-page h2 {
+  color: #00796b;
+}
+
+.app header nav {
+  padding: 10px;
+  background: #f0f0f0;
+}
+
+.app header nav a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #007bff;
+}
+
+.app header nav a:hover {
+  text-decoration: underline;
+}
+.home-icon {
+  width: 24px; 
+  height: auto;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 16px; 
 }
