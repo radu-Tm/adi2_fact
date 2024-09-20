@@ -1,0 +1,52 @@
+.plati-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px; /* Poate ajuta la uniformitate */
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Adaugă stiluri suplimentare pentru select */
+select {
+  appearance: none; /* Ascunde săgeata implicită */
+  background-color: white; /* Setează fundal alb */
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><polygon points="0,0 16,0 8,8" fill="#aaa"/></svg>'); /* Săgeată personalizată */
+  background-repeat: no-repeat;
+  background-position: right 10px center; /* Poziția săgeții */
+  background-size: 12px; /* Dimensiunea săgeții */
+}
